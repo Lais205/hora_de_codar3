@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+</head>
+<body>
+    <script>
+
+// Escreva um algoritmo para imprimir os números de 1 (inclusive) a 10 (inclusive) em ordem decrescente.
+//
+
+var segundos = 10;
+
+function contagemRegressiva() {
+document.write(segundos + "<br>");
+
+if (segundos == 0) {
+    document.write("Se passaram 10 segundos");
+} else {
+    segundos--;
+    setTimeout(contagemRegressiva, 1000);
+}
+}
+contagemRegressiva();
+    </script>
+</body>
+</html>
